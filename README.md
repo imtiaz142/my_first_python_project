@@ -1,44 +1,21 @@
-# My First Python Project
+# 🌤 Weather App
 
-This is a beginner-level Python project with multiple files to practice using Git and GitHub.
+This is a simple Python app that fetches weather info using the OpenWeatherMap API.
 
-✅ 1. Go to Desktop and create a project folder
-cd ~/Desktop
-mkdir my_first_python_project
-cd my_first_python_project
+## 🔧 Requirements
 
-✅ 2. Create Python files
-touch main.py helper.py README.md
+- Python 3
+- requests module
 
-✅ 3. Initialize Git & make first commit
+## 🚀 How to Run
 
-git init
-git add .
-git commit -m "Initial commit - basic Python project"
+1. Clone the repository
+2. Install dependencies:
+3. Run the app:
 
-✅ 4. Create a GitHub repo (do this from the website manually):
-Go to: https://github.com
+## 🔑 API Key
 
-Click New
+Sign up at [OpenWeatherMap](https://openweathermap.org/api) and add your API key in `weather.py`.
 
-Repo name: my_first_python_project
-
-Leave README unchecked (you already have one)
-
-Click Create repository
-
-✅ 5.Connect your local folder to GitHub
-git remote add origin https://github.com/YOUR_USERNAME/my_first_python_project.git
-git branch -M main
-git push -u origin main
-
-
-🔁 Future Updates (whenever you change code)
-
-git add .
-git commit -m "Your update message"
-git push
-
-🧹 Optional: Create .gitignore file
-
-touch .gitignore
+#for install the module
+pip install -r requirements.txt

@@ -6,7 +6,7 @@ greet("Imtiaz Ali")
 
 import MyModules
  
-from MyModules import add, subtract, multiple
+from MyModules import add, subtract, multiple #this is good method 
 
 print(MyModules.add(2,8))
 
