@@ -26,3 +26,10 @@ print(3 in my_set)  # True
 # O(1)
 # Python uses a hash function to calculate the position (index) in memory where the value should be
 # — so it can go directly to it, like jumping to a room by number.
+
+
+# | Data Structure | `x in structure` | Access by Key/Index | Add/Insert | Best Use                          |
+# | -------------- | ---------------- | ------------------- | ---------- | --------------------------------- |
+# | `list`         | ❌ O(n)           | ✅ O(1) (by index)   | ❌ O(n)     | Ordered data, fast index access   |
+# | `set`          | ✅ O(1)           | ❌ No index/key      | ✅ O(1)     | Fast existence check              |
+# | `dict`         | ✅ O(1)           | ✅ O(1) by key       | ✅ O(1)     | Fast lookup and key-value storage |
