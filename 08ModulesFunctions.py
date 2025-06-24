@@ -20,11 +20,20 @@
 
 #3. Function with Return Value
 
-def calculator(a: int, b: int):
-    add = a + b
-    subtract = a - b
-    return add, subtract
+# def calculator(a: int, b: int):
+#     add = a + b
+#     subtract = a - b
+#     return add, subtract
 
-x, y = calculator(10, 3)
-print("Sum:", x)
-print("Difference:", y)
+# x, y = calculator(10, 3)
+# print("Sum:", x)
+# print("Difference:", y)
+
+# Default Parameters
+
+# def greet(name="Guest"):
+#     print("Hello,", name)
+
+# greet()         # Output: Hello, Guest
+# greet("Imtiaz") # Output: Hello, Imtiaz
+
