@@ -1,6 +1,7 @@
 #function_docstring
 
 # def greatting():
+#   "function_docstring"
 #   print("hello welcome to python")
 #   return print
 # greatting()
@@ -70,17 +71,64 @@
 
 #----------------Function Scope------------------------------
 
-x = 10  # Global variable
+# x = 10  # Global variable
 
-def show():
-    x = 5  # Local variable use any where in the file
-    print("Inside function:", x)
+# def show():
+#     x = 5  # Local variable use any where in the file
+#     print("Inside function:", x)
 
-show()                 # Output: Inside function: 5
-print("Outside:", x)   # Output: Outside: 10
+# show()                 # Output: Inside function: 5
+# print("Outside:", x)   # Output: Outside: 10
 
 
-#-------------------lambda  FUNCTIONS-----------------
+# #-------------------lambda  FUNCTIONS-----------------
 
-square = lambda x: x * x
-print(square(5))  # Output: 25
+# square = lambda x: x * x
+# print(square(5))  # Output: 25
+
+# numbers = [1, 2, 3, 4, 5]
+
+# a,c, *middle, b = numbers
+
+# print(a)       # 1
+# print(middle)  # [2, 3, 4]
+# print(b)       # 5
+# print(c) 
+
+
+# ----------------------Positional-Only Arguments?------------------
+
+
+#def function_name(pos1, pos2, /, other1, other2):
+
+# Parameters before /: Positional-only
+
+# Parameters after /: Can be positional or keyword
+
+# def posFun(x, y, /, z):
+#     print(x,y,z)
+#     print(x + y + z)
+
+# print("Evaluating positional-only arguments: ")
+# posFun(2, 1, 3)
+
+# # uncomment to see error
+# #posFun(x=1, y=2, z=3)
+
+
+
+#----------------------Keyword-only-arguments----------------------------
+
+def posFun(a,b,c,*,d,e,f):
+    print(a+b+c+d+e+f)
+
+print("Evaluating positional-only arguments: ")
+#posFun(1,2,3,d=3,e=4,f=5)
+posFun(1,2,3,d=3,e=4,f=5)
+ 
+#----------------------Note: / is as before and * is working as after----------------------------
+
+
+
+
+
