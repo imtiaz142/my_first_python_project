@@ -29,7 +29,7 @@
 # print("Sum:", x)
 # print("Difference:", y)
 
-# Default Parameters
+# ---------------------Default Parameters------------------
 
 # def greet(name="Guest"):
 #     print("Hello,", name)
@@ -37,3 +37,50 @@
 # greet()         # Output: Hello, Guest
 # greet("Imtiaz") # Output: Hello, Imtiaz
 
+# ---------------------Position Arguments------------------
+
+# def positionarg(name,age):
+#     print(f"Your name is {name} and your age  is {age}")
+
+# positionarg(name="imtiaz", age=33)
+# positionarg(age="56", name="Ali")
+
+
+
+#--------------Variable-Length Arguments----------------------
+
+
+# def total(*numbers):
+#     print(sum(numbers))
+
+# total(1,2,3,4,5,6,7,8,9,10)
+
+
+
+#----------------**kwargs — many key-value pairs (dictionary)--------------------
+
+
+# def info(**details):
+#     for key, value in details.items():
+#         print(key, ":", value)
+
+# info(name="Imtiaz", age=30)
+
+
+
+#----------------Function Scope------------------------------
+
+x = 10  # Global variable
+
+def show():
+    x = 5  # Local variable use any where in the file
+    print("Inside function:", x)
+
+show()                 # Output: Inside function: 5
+print("Outside:", x)   # Output: Outside: 10
+
+
+#-------------------lambda  FUNCTIONS-----------------
+
+square = lambda x: x * x
+print(square(5))  # Output: 25
