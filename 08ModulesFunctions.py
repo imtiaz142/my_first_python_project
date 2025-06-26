@@ -119,16 +119,45 @@
 
 #----------------------Keyword-only-arguments----------------------------
 
-def posFun(a,b,c,*,d,e,f):
-    print(a+b+c+d+e+f)
+# def posFun(a,b,c,*,d,e,f):
+#     print(a+b+c+d+e+f)
 
-print("Evaluating positional-only arguments: ")
-#posFun(1,2,3,d=3,e=4,f=5)
-posFun(1,2,3,d=3,e=4,f=5)
+# print("Evaluating positional-only arguments: ")
+# #posFun(1,2,3,d=3,e=4,f=5)
+# posFun(1,2,3,d=3,e=4,f=5)
  
 #----------------------Note: / is as before and * is working as after----------------------------
 
 
+
+#---------------------explain this in details Arbitrary Keyword Arguments, **kwargs----------------------
+
+
+# def print_info(**kwargs): #** save the value in dictory and with one * the vlaue is save in tuple
+#     print(kwargs)
+#     print(type(kwargs))
+
+# print_info(name="Imtiaz",age=25,myclass=9,fathername= "Mukhtar Ahmad") #you can add as many value as you want
+
+# #-----------------------Example----------------------
+
+def my_function(**student):
+  print("\nHis last name is " + student["lname"])
+
+  for key, value in student.items():
+    print(key, value)
+
+  print(student)
+
+my_function(fname = "Ali", lname = "Osman")
+
+my_function(fname = "Ali", lname = "Osman", course = "Python - 101", day="Saturday", time="1400 - 1800")
+
+my_dict = {"fname": "Arif", "lname": "Rozani", "course":"101 - 201", "day":"Saturday | Sunday", "role":"Student"}
+
+
+
+#-----------------------Generator Function----------------------
 
 
 
