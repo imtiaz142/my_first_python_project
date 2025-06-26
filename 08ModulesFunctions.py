@@ -149,7 +149,7 @@ def my_function(**student):
 
   print(student)
 
-my_function(fname = "Ali", lname = "Osman")
+my_function(fname = "ehsan", lname = "Osman")
 
 my_function(fname = "Ali", lname = "Osman", course = "Python - 101", day="Saturday", time="1400 - 1800")
 
