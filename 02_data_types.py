@@ -1,12 +1,12 @@
 
 # #  -------------------Integer (int)-------------------------------
 
-a : int = 16
-b : int = 4
+# a : int = 16
+# b : int = 4
 
-print(a//b)  #reminder ni data means point k bd wali value 
-print(a % b)  # 0 remainder dta ha 
-# print(divmod(9,4)) #(2,1) 9 // 4 → 2, 9 % 4 → 1
+# print(a//b)  #reminder ni data means point k bd wali value 
+# print(a % b)  # 0 remainder dta ha 
+# # print(divmod(9,4)) #(2,1) 9 // 4 → 2, 9 % 4 → 1
 
 # print(abs(-50))  #(50) abs() function means absolute value
 
@@ -36,12 +36,19 @@ print(a % b)  # 0 remainder dta ha
 #----------------------------Complex (complex)---------------------
 
 
-z = 3 + 4j
+# z = 3 + 4j
 
-print(z.real) # 3.0
-print(z.imag)  # 4.0
-print(abs(z))  # 5.0 (9+16)=25=5.0
+# print(z.real) # 3.0
+# print(z.imag)  # 4.0
+# print(abs(z))  # 5.0 (9+16)=25=5.0
 
 
 #----------------------------String---------------------
 
+name = "imtiaz Ali"
+print(name[7])
+print(name*3)
+print(name[0:9:2]) #start stop steps
+
+print(name.upper())
+print(name.swapcase()) #Swap lower↔upper
