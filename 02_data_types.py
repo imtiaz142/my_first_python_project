@@ -46,9 +46,22 @@
 #----------------------------String---------------------
 
 name = "imtiaz Ali"
-print(name[7])
-print(name*3)
-print(name[0:9:2]) #start stop steps
+# print(name[7])
+# print(name*3)
+#print(name[0:9:2]) #start stop steps
+# print(name[:3]) #first 3
+# print(name[3:]) #start from 3 to end
+# print(name[-1]) #Last
 
-print(name.upper())
-print(name.swapcase()) #Swap lower↔upper
+# print(name.upper())
+# print(name.swapcase()) #Swap lower↔upper
+
+# print(name.replace("a","b")) # agr a lower case hy tu lower all replace ho gy a capital hy tu capital all replace ho gy 
+
+# print(name.split()) #list bana den ga space k hisab sy
+
+# print(name.strip()) #Bothh side space remove
+# print(name.rstrip()) #right side space remove
+
+for i in "imtiaz":
+    print(i)
