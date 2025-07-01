@@ -48,7 +48,7 @@
 name = "imtiaz Ali"
 # print(name[7])
 # print(name*3)
-#print(name[0:9:2]) #start stop steps
+# print(name[0:9:2]) #start stop steps
 # print(name[:3]) #first 3
 # print(name[3:]) #start from 3 to end
 # print(name[-1]) #Last
@@ -63,5 +63,29 @@ name = "imtiaz Ali"
 # print(name.strip()) #Bothh side space remove
 # print(name.rstrip()) #right side space remove
 
-for i in "imtiaz":
-    print(i)
+# for i in "imtiaz":
+#     print(i)
+
+# print(len(name)) #space b account ho gi
+# print(min(name)) # i, m, t, i, a, z → 'a' comes first alphabetically. agr space ha tu space phaly ay gi
+# print(max(name))
+# print(sorted(name)) # Returns the characters of the string in alphabetical order as a list.
+
+# # Revers String
+
+# reversename = name[::-1]
+
+# print(reversename)
+
+
+#remove all the aspaces
+
+# no_space = name.replace(" ", "")
+# print(no_space)
+
+
+text = "Imtiaz"
+encoded = text.encode()       # b'Imtiaz' when you send the data on internet 
+decoded = encoded.decode()    # 'Imtiaz'
+
+print(f"{encoded}{decoded}")
