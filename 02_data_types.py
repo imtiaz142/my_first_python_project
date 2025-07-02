@@ -127,3 +127,73 @@ print(view[0])        # 73 → ASCII of 'I'
 # Change the first letter
 view[0] = 90           # Replace 'I' with 'Z'
 print(data)           # bytearray(b'Zmtiaz')
+
+
+#--------------None Data Type-------------------------
+
+# It is a special data type used when:
+
+# A variable has no value yet
+
+# A function does not return anything
+
+# You want to reset or clear a variable
+
+
+x = None       # At the beginning: no value
+
+x = 10         # Later you assign a number
+print(x)       # Output: 10
+print(id(x))
+
+x = "Imtiaz"   # You can even change to a string
+print(x)       # Output: Imtiaz
+
+
+print(id(x))
+
+#The id() function returns the unique memory address (ID) of an object.
+
+
+#--------------Integer Literals-------------------------
+
+#Integer literals are just the whole numbers (no decimal point) you write directly in your code.
+
+
+
+# Type	Base	   Example   	Explanation
+# Decimal	Base 10	   100, -50	      Normal everyday numbers
+# Binary	Base 2	   0b1010	     Starts with 0b (0 or 1 only)
+# Octal	Base 8	   0o12	Start     with 0o (0–7 only)
+# Hexadecimal	Base 16	0x1F     	Starts with 0x (0–9 + A–F)
+
+#Decimal Literal
+
+x = 10
+y = -25
+print(x + y)  # Output: -15
+
+#Binary Literal (0b)
+
+a = 0b1010   # Binary for 10
+print(a)     # Output: 10
+
+#Octal Literal (0o)
+
+b = 0o12     # Octal for 10
+print(b)     # Output: 10
+
+#Hexadecimal Literal
+
+
+c = 0x1F     # Hexadecimal for 31
+print(c)     # Output: 31
+
+#--------------isinstance() Function-------------------------
+
+
+#isinstance() checks if a variable is of a specific data type.
+
+
+name = "Imtiaz"
+print(isinstance(name, str))
