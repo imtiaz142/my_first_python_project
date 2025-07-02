@@ -45,7 +45,7 @@
 
 #----------------------------String---------------------
 
-name = "imtiaz Ali"
+# name = "imtiaz Ali"
 # print(name[7])
 # print(name*3)
 # print(name[0:9:2]) #start stop steps
@@ -78,14 +78,26 @@ name = "imtiaz Ali"
 # print(reversename)
 
 
-#remove all the aspaces
+# re
 
 # no_space = name.replace(" ", "")
 # print(no_space)
 
 
-text = "Imtiaz"
-encoded = text.encode()       # b'Imtiaz' when you send the data on internet 
-decoded = encoded.decode()    # 'Imtiaz'
+# text = "Imtiaz"
+# encoded = text.encode()       # b'Imtiaz' when you send the data on internet 
+# decoded = encoded.decode()    # 'Imtiaz'
 
-print(f"{encoded}{decoded}")
+# print(f"{encoded}{decoded}")
+
+Range_Number:range = range(1,20,2)
+print(type(Range_Number))
+
+for i in range(1,10,2):
+    print(i)
+
+normal_set={1,2,3,4,4}
+frozan_set =frozenset([1,22,2,2,3,4,5,6,7,7])
+
+print(normal_set)
+print(frozan_set)
