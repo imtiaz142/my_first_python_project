@@ -90,6 +90,9 @@
 
 # print(f"{encoded}{decoded}")
 
+
+#----------------FrozanSet-------------------------
+
 Range_Number:range = range(1,20,2)
 print(type(Range_Number))
 
@@ -101,3 +104,26 @@ frozan_set =frozenset([1,22,2,2,3,4,5,6,7,7])
 
 print(normal_set)
 print(frozan_set)
+
+#------------What is UTF-8?----------
+
+byte_array: bytearray = bytearray([65, 66, 67, 69])
+# Converting the entire bytearray to a string using decode()
+print("Decoded string: ", byte_array.decode('utf-8'))  # Output: ABCE
+
+
+#--------------Memoryview (memoryview)-------------------------
+
+# A bytes object is an immutable (unchangeable) sequence of numbers from 0 to 255, used to store binary data like images, files, or messages.
+# A bytearray is a mutable (changeable) version of bytes, used when you need to edit or modify binary data.
+
+
+
+data = bytearray(b"Imtiaz")
+view = memoryview(data)
+
+print(view[0])        # 73 → ASCII of 'I'
+
+# Change the first letter
+view[0] = 90           # Replace 'I' with 'Z'
+print(data)           # bytearray(b'Zmtiaz')
