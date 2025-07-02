@@ -197,3 +197,5 @@ print(c)     # Output: 31
 
 name = "Imtiaz"
 print(isinstance(name, str))
+
+
