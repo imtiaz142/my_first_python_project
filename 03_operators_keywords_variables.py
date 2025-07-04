@@ -98,3 +98,17 @@ print("a is b:", a is b)         # False (different memory)
 print("a is c:", a is c)         # True (same memory)
 print("a is not b:", a is not b) # True
 print()
+
+# =============================================
+# 🆔 Identity Operators
+# =============================================
+
+
+import keyword
+
+# Line continuation (`\`) allows printing a statement over multiple lines, improving code readability without breaking the string.
+print("The list of \
+keywords is : ")
+
+# printing all keywords at once using "kwlist()"
+print(keyword.kwlist)
