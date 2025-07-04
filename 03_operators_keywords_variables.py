@@ -208,3 +208,18 @@ print()
 name, age, country = "Imtiaz", 30, "Pakistan"
 print("Real-World Example:")
 print(f"{name} is {age} years old from {country}.")  # Output: Imtiaz is 30 years old from Pakistan.
+
+
+
+
+# --------------------------------------------
+#  Delete a Variable Using del Keyword
+# --------------------------------------------
+
+a, b, c = 1, 2, 3
+print(a, b, c)  # Output: 1 2 3
+
+del a, b
+
+# print(a)     # ❌ Error: name 'a' is not defined
+print(c)       # Output: 3 (still exists)
