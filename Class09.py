@@ -8,10 +8,10 @@ print(sum(1,2,3,4))
 
 
 
-def info(naem:str,matial_status:bool,age:int int=30):#jis ko value dani vo last ma ho by default
- print('name',naem)
- print('age',age)
- print('matial_status',False)
+# def info(naem:str,matial_status:bool,age:int int=30):#jis ko value dani vo last ma ho by default
+#  print('name',naem)
+#  print('age',age)
+#  print('matial_status',False)
 
 
 #potion only arguments 
@@ -22,3 +22,8 @@ def posfun(x,y,/,z): #/ sy phaly jitny b arguments ho gy potion ma ho gy
 #keyword only arguments # 
 #lamda function
 #global scope local scope
+
+def say_hello():
+    print("Hello, world!")
+
+say_hello()
