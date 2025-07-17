@@ -5,4 +5,9 @@
 # Using Python's built-in dis module, you can view the compiled bytecode of a 
 # .py file by importing the module, loading the target function (either from the same file or another .py file),
 # and passing it to dis.dis() to see how Python internally translates your code into low-level instructions for execution.
+""
 
+x: int = 5  
+y= x+2
+
+print(y)
